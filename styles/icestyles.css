@@ -1,39 +1,73 @@
-* { box-sizing: inherit; } 
-
-html { box-sizing: border-box; }
-
-body{
-	text-align: center;
-	color: white;
-	background: url('../img/hockey-rink-wallpaper.jpg') center center fixed;
-	background-size:cover;
-	font-family: 'Share Tech Mono';
+*
+{
+    box-sizing: inherit;
 }
 
-input{
-	border: 0;
-	padding: 15px;
-	font-size: 18px;
-	color: black;
-	border: solid 2px red;
+html
+{
+    box-sizing: border-box;
 }
-input[type="submit"]{
-	border: solid 2px red;
-	background: white;
-	margin: 30px 0 0 0;
+
+body
+{
+    font-family: 'Share Tech Mono';
+
+    text-align: center;
+
+    color: white;
+    background: url('../img/hockey-rink-wallpaper.jpg') center center fixed;
+    background-size: cover;
 }
-.signup{
-	margin-top: 200px;
+
+input
+{
+    font-size: 18px;
+
+    padding: 15px;
+
+    color: black;
+    border: 0;
+    border: solid 2px red;
 }
-.submit{
-	width: 100px;
-	height: 100px;
-	color: white;
+input[type='submit']
+{
+    margin: 30px 0 0 0;
+
+    border: solid 2px red;
+    background: white;
 }
-form{
-	margin-top: 30px;
+.signup
+{
+    margin-top: 200px;
 }
-form:hover{
- opacity: 0.9;
- cursor: pointer;
+.trigger-button
+{
+    font-size: 17px;
+
+    position: relative;
+    top: 100px;
+
+    display: block;
+
+    margin: auto;
+    padding: 10px 30px;
+
+    cursor: pointer;
+
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    outline: none;
+    background: red;
+    box-shadow: 0 5px 1px gray;
+}
+.trigger-button:hover
+{
+    background: red;
+    box-shadow: 0 5px 10px gray;
+}
+.trigger-button:active
+{
+    border-top: 5px 5px 5px white;
+    box-shadow: none;
 }
