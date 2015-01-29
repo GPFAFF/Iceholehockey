@@ -9,7 +9,6 @@ body
 {
     font-family: 'Share Tech Mono';
 
-    height: 1000px;
 
     text-align: center;
 
@@ -212,10 +211,6 @@ nav#menu.scrolled h1#sitename
 .col-6{
     width: 100%;
 }
-.purchase:last-child{
-    margin-top: 50px;
-}
-
 .column1
 {
     width: 33%;
@@ -223,7 +218,9 @@ nav#menu.scrolled h1#sitename
     padding-top: 40px;
     margin: 0px 40px 0px 40px;
 }
-
+.clear{
+    clear: both;
+}
 
 .option1,
 .option2,
@@ -284,6 +281,118 @@ footer
     max-width: 100%;
     object-fit: contain;
 }
+/*.row{
+background-color:#111;
+font-size:0;
+width: 100%;
+margin:0 auto;
+margin-top: 50px;
+}
+.row .option{
+margin:0;
+width:20%;
+height:auto;
+
+-webkit-transition:1s;
+   -moz-transition:1s;
+     -o-transition:1s;
+        transition:1s;
+display:inline-block;
+position:relative;
+}
+.row .option img{
+width:100%;
+height:auto;
+}
+
+.row .option:nth-child(1){
+
+-webkit-transform-origin: 0% 0%;
+   -moz-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+     -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+}
+.row .option:nth-child(2){
+
+-webkit-transform-origin: 25% 0%;
+   -moz-transform-origin: 25% 0%;
+    -ms-transform-origin: 25% 0%;
+     -o-transform-origin: 25% 0%;
+        transform-origin: 25% 0%;
+}
+.row .option:nth-child(3){
+
+-webkit-transform-origin: 50% 0%;
+   -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+     -o-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+}
+.row .option:nth-child(4){
+
+-webkit-transform-origin:75% 0%;
+   -moz-transform-origin:75% 0%;
+    -ms-transform-origin:75% 0%;
+     -o-transform-origin:75% 0%;
+        transform-origin:75% 0%;
+}
+.row .option:nth-child(5){
+
+-webkit-transform-origin:100% 0%;
+   -moz-transform-origin:100% 0%;
+    -ms-transform-origin:100% 0%;
+     -o-transform-origin:100% 0%;
+        transform-origin:100% 0%;
+}
+.row .option:nth-child(6){
+
+-webkit-transform-origin:0% 25%;
+   -moz-transform-origin:0% 25%;
+    -ms-transform-origin:0% 25%;
+     -o-transform-origin:0% 25%;
+        transform-origin:0% 25%;
+}
+.row .option figcaption{
+margin:0;
+opacity:0;
+background:rgba(0,0,0,0.3);
+color:#fff;
+font-size: 10px;
+text-shadow: 1px 1px 1px black;
+font-family: 'Covered By Your Grace', cursive;
+position:absolute;
+bottom:0;
+width:100%;
+height: 15px;
+line-height: 15px;
+text-align: center;
+
+-webkit-transition:1s 1s opacity;
+   -moz-transition:1s 1s opacity;
+     -o-transition:1s 1s opacity;
+        transition:1s 1s opacity;
+}
+.expanded{
+
+-webkit-transform:scale(5);
+   -moz-transform:scale(5);
+    -ms-transform:scale(5);
+     -o-transform:scale(5);
+        transform:scale(5);
+z-index:5;
+}
+.row .option.expanded figcaption{
+opacity:1;
+}
+.full figure:not(.expanded){
+pointer-events:none;
+}
+.row .option:hover{
+cursor:pointer;
+z-index:4;
+}*/
+
 @media only screen and (min-width: 802px) and (max-width: 950px){
     nav#menu.scrolled h1#sitename
     {
@@ -434,4 +543,56 @@ footer
 
         margin: 10px 0 0 -18px;
     }
+}
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2){ 
+    .grid-container
+    {
+        height: 1000px;
+        max-width: 100%;
+        display: block;
+    }
+    .col-2
+    {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+
+    }
+
+    .option1,
+    .option2,
+    .option3
+{
+    height: 400px;
+    margin: 30px auto;
+    padding: 50px;
+  
+    
+}
+    
+
+    button
+    {
+        
+        padding: 20px;
+
+        background-color: #5c6266;
+    }
+    nav#menu ul li
+    {
+        width: 50px;
+        height: 50px;
+        padding: 3px;
+    }
+    nav#menu ul li a
+    {
+        font-size: 10px;
+    }
+    nav#menu.scrolled h1#sitename
+    {
+        font-size: 10px;
+
+        margin: 10px 0 0 -18px;
+    }
+
 }
