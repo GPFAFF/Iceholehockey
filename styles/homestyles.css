@@ -281,6 +281,14 @@ footer
     max-width: 100%;
     object-fit: contain;
 }
+.option img{
+    border: 6px solid red;
+    transition: -webkit-transform 0.25s ease;
+
+}
+.option img:active{
+    -webkit-transform: scale(1.5);
+}
 /*.row{
 background-color:#111;
 font-size:0;
