@@ -165,6 +165,9 @@ nav#menu.scrolled h1#sitename
 {
     margin-top: 200px;
 }
+.clear{
+    clear: both;
+}
 .trigger-button
 {
     font-size: 17px;

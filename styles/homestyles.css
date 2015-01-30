@@ -289,6 +289,9 @@ footer
 .option img:active{
     -webkit-transform: scale(1.5);
 }
+table{
+    margin: 0 auto 10px;
+}
 /*.row{
 background-color:#111;
 font-size:0;
@@ -486,7 +489,7 @@ z-index:4;
     }
     .col-2
     {
-        margin: 0 auto;
+        margin: 40px auto;
         height: 400px;
         padding-top: 40px;
         width: 50%;
