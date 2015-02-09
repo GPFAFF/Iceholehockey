@@ -358,11 +358,4 @@ function Ctrl($scope) {
 
 	return exports;
 });
-
-var galleryimages = document.querySelectorAll(".option .row");
-for(i=0; i<galleryimages.length; i++){
-  galleryimages[i].addEventListener( 'click', function(){
-    this.classList.toggle("expanded");
-    gridcontainer.classList.toggle("full")}
-  );
-  }
+  

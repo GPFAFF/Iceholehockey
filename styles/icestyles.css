@@ -168,6 +168,17 @@ nav#menu.scrolled h1#sitename
 .clear{
     clear: both;
 }
+.about{
+    margin: 0 auto;
+}
+.about-us{
+    text-align: center;
+    width: 50%;
+    margin: 400px auto;
+    background: rgba( 155, 155, 155, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+}
 .trigger-button
 {
     font-size: 17px;
@@ -193,6 +204,9 @@ nav#menu.scrolled h1#sitename
 {
     background: red;
     box-shadow: 0 5px 10px gray;
+
+}
+
 }
 .trigger-button:active
 {
