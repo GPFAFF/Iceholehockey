@@ -1,0 +1,201 @@
+*
+{
+    box-sizing: inherit;
+}
+
+html
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Share Tech Mono';
+
+    text-align: center;
+
+    color: white;
+    background: url('../img/hockey-rink-wallpaper.jpg') center center fixed;
+    background-size: cover;
+}
+.about{
+    background: url('../img/FaceOff.jpg') center center fixed;
+    background-size: cover;
+}
+input
+{
+    font-size: 18px;
+
+    padding: 15px;
+
+    color: black;
+    border: 0;
+    border: solid 2px red;
+}
+input[type='submit']
+{
+    margin: 30px 0 0 0;
+
+    border: solid 2px red;
+    background: white;
+}
+
+nav#menu
+{
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+
+    text-align: center;
+
+    background: red;
+}
+
+nav#menu ul
+{
+    display: inline-block;
+
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+
+    background: red;
+}
+
+nav#menu ul li
+{
+    line-height: 50px;
+
+    float: left;
+
+    height: 50px;
+    margin-right: 5px;
+    padding: 0 20px;
+
+    list-style: none;
+    /*
+   * This element will get an alternative style
+   * once we apply the "scrolled" class.
+   * We also want a nice animation so we can
+   * simply set CSS3 transitions for this.
+   */
+
+    transition: margin .1s ease-in-out;
+
+    background: #5c6266;
+}
+nav#menu ul li:hover
+{
+    transition: .3s;
+
+    background-color: gray;
+}
+
+nav#menu ul li:nth-child(1)
+{
+    margin-left: 5px;
+}
+
+nav#menu ul li.active
+{
+    background: gray;
+}
+
+nav#menu ul li a
+{
+    font-size: 1.3em;
+
+    text-decoration: none;
+
+    color: white;
+}
+
+nav#menu h1#sitename
+{
+    font-size: 1.2em;
+    line-height: 35px;
+
+    position: absolute;
+    left: 2.5em;
+
+    margin: 0;
+
+    -webkit-transition: opacity 2.1s ease-in-out;
+            transition: opacity 2.1s ease-in-out;
+    /*
+   * Same thing here as with the menu items.
+   * This element will be animated into its
+   * alt. state with the transition property
+   */
+            transition: opacity .1s ease-in-out;
+
+    opacity: 0;
+    color: white;
+}
+
+
+/*********************************************
+ * Once the 'scrolled' class is toggled 
+ * we can set any alternative styling that we
+ * want for the menu bar 
+ *********************************************/
+
+nav#menu.scrolled
+{
+    position: fixed;
+    top: 0;
+
+    margin: 0;
+}
+
+nav#menu.scrolled ul li
+{
+    margin: 0;
+}
+
+nav#menu.scrolled h1#sitename
+{
+    line-height: 1.5;
+
+    margin-right: 100px;
+
+    opacity: 1;
+}
+.signup
+{
+    margin-top: 200px;
+}
+.clear{
+    clear: both;
+}
+.trigger-button
+{
+    font-size: 17px;
+
+    position: relative;
+    top: 100px;
+
+    display: block;
+
+    margin: auto;
+    padding: 10px 30px;
+
+    cursor: pointer;
+
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    outline: none;
+    background: red;
+    box-shadow: 0 5px 1px gray;
+}
+.trigger-button:hover
+{
+    background: red;
+    box-shadow: 0 5px 10px gray;
+}
+.trigger-button:active
+{
+    border-top: 5px 5px 5px white;
+    box-shadow: none;
+}
