@@ -234,6 +234,7 @@ nav#menu.scrolled h1#sitename
 }
 .button{
         transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
 }
 
 .button {
